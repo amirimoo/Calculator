@@ -1,12 +1,13 @@
+let result = document.getElementById("result")
 function clearScreen() {
-    document.getElementById("result").value = "";
+    result.value = "";
     }
     
     function display(value) {
-    document.getElementById("result").value += value;
+    result.value += value;
     }
     function calculate() {
-    var p = document.getElementById("result").value;
+    var p = result.value;
     var q = eval(p);
-    document.getElementById("result").value = q;
+    result.value = q;
     }
